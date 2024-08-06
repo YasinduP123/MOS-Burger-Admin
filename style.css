@@ -135,8 +135,8 @@ td{
 .add-btn{
     width: 20px;
     height: 45px;
-    
 }
+
 .add-plus{
     margin-left: 150px;
     width: 50px;
@@ -151,11 +151,17 @@ td{
     font-family: Arial, sans-serif;
     
 }
+
+.add-plus:active{
+    background-color:rgb(15, 96, 15);
+    color: gray;
+}
+
 .add-btn-display{
     display: flex;
     margin-top: 30px;
-
 }
+
 .item-add-btn{
     border-radius: 30%;
     background-color: rgb(14, 43, 186);
@@ -163,9 +169,11 @@ td{
     width: 50px;
     font-size: 20px;
 }
+
 .item-add-btn:active{
     background-color:rgb(7, 25, 113);
 }
+
 .price-part{
     line-height: 20px;
 }
@@ -179,6 +187,7 @@ td{
     /* background-color: rgba(243, 10, 10, 0.151); */
     /* border: 4px solid red; */
 }
+
 .customer-table-row{
     margin-top: 40px
 }
@@ -195,9 +204,9 @@ td{
     background-color: #0000004e;
     color: rgba(243, 246, 246, 0.728);
     letter-spacing: 2px;
-    font-size: larger;
-    
+    font-size: larger;    
 }
+
 .customer-table-data{
     padding-left: 50px;
     padding-right: 90px;
@@ -217,13 +226,14 @@ td{
 .home-view{
 
     background-color: rgba(255, 255, 255, 0.395);
-    height: 1000px;
+    height: 1200px;
     margin-top: 10px;
     margin-right: 50px;
     margin-left: 50px;
     margin-bottom: 40px;
     border-radius: 30px;
     padding-right: 30px;
+    
 }
 
 .back-home-page{
@@ -238,6 +248,7 @@ td{
     margin-right: 7px;
 }
 
+
 .btn-panel{
     margin-top: 10px;
     display: flex;
@@ -246,7 +257,7 @@ td{
     
     
 }
-.btns :hover{
+.btns :hover {
     /* box-shadow:10px 10px 10px 10px rgb(4, 5, 5); */
     transform:scale(1.2);
     transition-duration: 370ms;    
@@ -449,10 +460,9 @@ td{
 }
 .add-new-item-button{
     align-items: center;
-    height: 30px;
-    width: 30px;
-    justify-content: baseline;
-    padding: 10px 20px;
+    height: 60px;
+    width: 60px;
+    padding: 5px 10px;
     border-radius: 50%;
     background-color: green;
     margin:20px;
@@ -461,16 +471,23 @@ td{
     font-weight: bold;
     font-size: 30px;
 }
+
 .add-new-item-lable{
     align-items: center;
     justify-content: baseline;
     padding: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
     background-color: orangered;
-    margin:200px;
+    margin:100px;
     color: white;
     border-radius: 20px;
 }
 
+.add-new-item-button:active{
+    color:gray;
+    background-color: rgb(4, 104, 4);
+}
 
 @media (max-width:3600px) {
 .home-view-items{
@@ -495,4 +512,39 @@ td{
     width: 80px;
 }
 
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++ */
+.bt button{
+    background-color: aqua;
+    height: 1;
+}
+.mos_burger{
+    font-size: 50px;
+    text-align: center;
+    padding-bottom: 13px;
+    font-weight: bold;
+    font-family: Bevan;
+    letter-spacing: 1px;
+    padding-top: 15px;
+    color:rgb(0, 0, 0);
+    background-color: orangered;
+    margin-left:25px;
+    border-top-left-radius: 90px;
+    border-top-right-radius: 90px;
+    letter-spacing: 8px;
+
+}
+.sub_mos{
+    background-color: rgb(225, 85, 10);
+    text-align: center;
+    margin-left:25px;
+    padding-top: 0px;
+    margin-top: -8px;
+    letter-spacing: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
 }
