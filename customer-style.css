@@ -13,24 +13,29 @@
     background-image: url("images/Shah_Rukh_Khan.jpg");
     background-position: center;
     background-size: cover;
-    margin-bottom: 30px;
-    
+    margin-left: 220px;
     
 }
 .customer-card{
-    height: 540px;
-    width: 400px;
-    background-color: blue;   
+    height: 690px;
+    width: 600px;
+    background-color: rgba(8, 26, 98, 0.881);   
     border-radius: 40px;
     padding-top: 30px;
     margin-left: 80px;
     display: grid;
+    color: white;
+    justify-self: center;
 }
 .home-view{
     padding-top: 90px;
 }
 .customers-table{
-
+    display: flex;
+    margin: 0px;
+    margin-top:-66px;
+    align-items: center;
+    justify-content: center;
 }
 
 .table-cust-row,.table-cust-data{
@@ -38,10 +43,96 @@
     font-size: 20px;
     
 }
+
+.table-cust-data2,.table-cust-data2{
+    padding: 0px;
+    font-size: 20px;
+    text-align: right;
+    background-color: rgb(0, 0, 0);
+    border:7px solid blue;
+    border-radius: 40px;
+
+}
+
+.table-cust-head{
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-bottom: 40px;
+    text-align: right;
+    text-align: center;
+}
+.table-cust-head2{
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-left: 90px;
+    padding-bottom: 40px;
+    padding-right: 10px;
+    padding-left: 60px;
+}
+
 .bio{
     
 }
 .table-cust-data{
     text-align: left;
     padding-left: 0px;
+    background-color: rgb(0, 0, 0);
+    border:7px solid blue;
+    padding-left: 14px;
+    border-radius: 40px;
+    text-align: center;
+
+    
+}
+.table-cust-data2{
+    padding-right: 10px;
+    padding-left:40px;
+    text-align: center;
+
+}
+.home-view{
+    height: 2000px;
+    width: 2000px;
+}
+.add-customer-form{
+    height: 840px;
+    width: 500px;
+    background-color: rgba(94, 56, 11, 0.582);
+    border-radius: 20px;
+    display: grid;
+    justify-content: center;
+}
+.add-customer-form-ProfPic{
+    height: 120px;
+    width: 120px;
+    background-color: rgba(0, 0, 0, 0.616);
+    margin-top: 40px;
+    border-radius: 50%;
+    text-align: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 50px;
+    color: rgba(255, 255, 255, 0.566);
+    padding-top: 13px;
+    margin-left: 60px;
+    margin-bottom: 50px;
+
+}
+
+.add-customer-form-table{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.input-data{
+    height: 40px;
+    box-shadow: 4px 4px 4px 4px black;
+}
+.input-data-date{
+    height: 40px;
+    width: 208px;
+    box-shadow: 4px 4px 4px 4px black;
+
 }

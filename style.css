@@ -120,18 +120,21 @@ td{
 .align-box{
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(6, 300px); /* 3 columns, each taking equal space */
+    grid-template-columns: repeat(6, 300px); /* 6 columns, each taking equal space */
     grid-template-rows: repeat(2, 500px); 
     margin-left: 90px;
 }
+
 .item-card{
     margin-top: 40px;
 }
+
 .item-card:hover{
     transform : scale(1.05);
     transition-duration: 170ms;
     cursor: pointer;
 }
+
 .add-btn{
     width: 20px;
     height: 45px;
