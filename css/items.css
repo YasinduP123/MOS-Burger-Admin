@@ -1,12 +1,17 @@
 .add-item-form-table{
+    margin-top: 50px;
+    margin-left: 150px;
+    margin-right: -150px;
     
 }
 .add-item-form-table-row{
-
+    border: 4px solid black;
 }
 .add-item-form-table-data{
-    border: 4px solid black;
+    
     background-color: rgba(0, 0, 0, 0.511);
+    display: flex;
+    justify-content: center;
 }
 .add-item-form-table-head{
     border: 4px solid black;

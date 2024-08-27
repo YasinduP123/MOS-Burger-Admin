@@ -19,13 +19,14 @@
 .customer-card{
     height: 690px;
     width: 600px;
-    background-color: rgba(8, 26, 98, 0.881);   
+    background-color: rgba(6, 18, 63, 0.881);   
     border-radius: 40px;
     padding-top: 30px;
     margin-left: 80px;
     display: grid;
     color: white;
     justify-self: center;
+    margin-bottom: 20px;
 }
 .home-view{
     padding-top: 90px;
@@ -95,7 +96,7 @@
     width: 2000px;
 }
 .add-customer-form{
-    height: 840px;
+    height: 880px;
     width: 500px;
     background-color: rgba(94, 56, 11, 0.582);
     border-radius: 20px;
@@ -136,3 +137,25 @@
     box-shadow: 4px 4px 4px 4px black;
 
 }
+
+.add-customer-form-button{
+    margin-left: 150px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color:rgb(30, 204, 30); /* Circle background color */
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+.add-customer-form-button:active{
+    background-color:rgb(15, 96, 15);
+    color: gray;
+}
+
+
+

@@ -58,45 +58,10 @@
         </div>
         <div class="home-view">
           <div class="row">  
-            <div class="col">
-              <div class="customer-card"> 
-                <div class="profile-pic">
-                    <!-- // -->
-                </div>
-                <div class="bio">
-                        <table class="customers-table">
-                            <tr class="table-cust-row">
-                                <th class="table-cust-head">Name</th>
-                                <th class="table-cust-head2">Sharuk Khan</th>
-                            </tr>
-                            <tr class="table-cust-row">
-                                <td class="table-cust-data">Age</td>
-                                <td class="table-cust-data2">56</td>
-                            </tr>
-                            <tr class="table-cust-row">
-                                <td class="table-cust-data">Order Count</td>
-                                <td class="table-cust-data2">490</td>
-                            </tr>
-                            <tr class="table-cust-row">
-                                <td class="table-cust-data">Favourite Item</td>
-                                <td class="table-cust-data2">Mos Special Submarine</td>
-                            </tr>
-                            <tr class="table-cust-row">
-                                <td class="table-cust-data">Birthday</td>
-                                <td class="table-cust-data2">1965-Nov-22</td>
-                            </tr>
-                            <tr class="table-cust-row">
-                                <td class="table-cust-data">Address</td>
-                                <td class="table-cust-data2">23/B,Bentota,Galle</td>
-                            </tr>
-                            <tr class="table-cust-row">
-                                <td class="table-cust-data">Most Ordered Item</td>
-                                <td class="table-cust-data2">Mos Special Submarine</td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-                </div>
+            <div class="col" id="customerCard">
+             
+            
+            </div>
                 <div class="col">
                 <div class="add-customer-form">    
                     <div class="add-customer-form-ProfPic">
@@ -106,38 +71,38 @@
                     <table class="add-customer-form-table">
                         <tr>
                             <td>
-                                <input class="input-data" type="text" placeholder="Name">
+                                <input class="input-data" type="text" placeholder="Name" id="inputCustomerName">
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <input class="input-data" type="text" placeholder="Age">
+                                <input class="input-data" type="text" placeholder="Age" id="inputCustomerAge">
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <input class="input-data" type="text" placeholder="Favourite Item">
+                                <input class="input-data" type="text" placeholder="Favourite Item" id="inputCustomerFavouriteItem">
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <input class="input-data-date" type="date" placeholder="Birthday">
+                                <input class="input-data-date" type="date" placeholder="Birthday" id="inputCustomerBDay">
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <input class="input-data" type="text" placeholder="Address">
+                                <input class="input-data" type="text" placeholder="Address" id="inputCustomerAddress">
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <input class="input-data" type="text" placeholder="Most Ordered Item">
+                                <input class="input-data" type="text" placeholder="Most Ordered Item" id="inputCustomerMostOrderdItem">
                             </td>
                         </tr>
                     </table>
                 </div>
-                <div class="add-customer-form-button">
-                
+                <div >
+                    <Button class="add-customer-form-button" id="addCustomerBtnOnAction">+</Button>
                 </div>
                 <div class="add-customer-form-clear">
 
@@ -148,6 +113,7 @@
           </div>
         </div>
     </div>
+    <script src="customer.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
