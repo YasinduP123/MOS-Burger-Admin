@@ -1,3 +1,18 @@
+document.getElementById("addInputButton").addEventListener("click",addRowBtnOnAction);
+let inputContainer = document.getElementById("inputContainer")
+
+
+function addRowBtnOnAction(){
+    
+    let inpField = document.createElement('input');
+    inpField.type = 'text';
+
+    inputContainer.appendChild(inpField);
+
+}
+
+
+{
 let customerCard = document.getElementById("customerCard");
 document.getElementById("addCustomerBtnOnAction").addEventListener("click",addCustomerOnAction);
 
@@ -56,3 +71,4 @@ let inputCustomerMostOrderdItem = document.getElementById("inputCustomerMostOrde
     customerCard.innerHTML = cardBody;
 }
 
+}

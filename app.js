@@ -27,8 +27,7 @@ let tableBody = `
 let arrayList = [];
 
 document.getElementById("btnAddNewItemEvent").addEventListener("click",btnAddNewItemOnAction);
-
-
+document.getElementById("btnDeleteItem").addEventListener("click",btnDeleteItemOnAction)
 function btnAddNewItemOnAction(){
     let inpItemCode = document.getElementById("inpItemCode").value;
     let inpItemName = document.getElementById("inpItemName").value;
@@ -52,5 +51,3 @@ function btnAddNewItemOnAction(){
 let item = document.getElementById("addNewItems");
 item.innerHTML = tableBody;
 }
-
-
