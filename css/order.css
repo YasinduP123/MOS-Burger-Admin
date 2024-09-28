@@ -95,11 +95,11 @@
 }
 .home-view{
     height: 2000px;
-    width: 1900px;
+    width: 1400px;
     margin-left:70px;
 }
 .add-customer-form{
-    height: 880px;
+    height: auto;
     width: 500px;
     background-color: rgba(94, 56, 11, 0.582);
     border-radius: 20px;
@@ -133,12 +133,18 @@
 .input-data{
     height: 40px;
     box-shadow: 4px 4px 4px 4px black;
+    margin-top: 20px;
 }
 .input-data-date{
     height: 40px;
     width: 208px;
     box-shadow: 4px 4px 4px 4px black;
+    margin-top: 20px;
 
+}
+
+.add-customer-form-details{
+    margin-top: 20px;
 }
 
 .add-customer-form-button{
@@ -162,7 +168,7 @@
 }
 
 
-@media (max-width: 460px) {
+@media (max-width: 780px) {
     .img-add{
         justify-content: center;
         align-items: center;

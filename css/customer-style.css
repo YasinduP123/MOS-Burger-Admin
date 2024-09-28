@@ -19,7 +19,7 @@
 }
 .customer-card{
     height: 690px;
-    width: 600px;
+    width: 400px;
     background-color: rgba(6, 18, 63, 0.881);   
     border-radius: 40px;
     padding-top: 30px;
@@ -31,6 +31,7 @@
 }
 .home-view{
     padding-top: 90px;
+    
 }
 .customers-table{
     display: flex;
@@ -48,14 +49,14 @@
     
 }
 
-.table-cust-data2,.table-cust-data2{
+.table-cust-data1,.table-cust-data2{
     padding: 0px;
     font-size: 20px;
     text-align: right;
     background-color: rgb(0, 0, 0);
     border:7px solid blue;
     border-radius: 40px;
-
+    margin-top: 10px
 }
 
 .table-cust-head{
@@ -95,12 +96,12 @@
 
 }
 .home-view{
-    height: 2000px;
-    width: 1500px;
+    height: auto ;
+    width: auto;
 }
 .add-customer-form{
-    height: 880px;
-    width: 500px;
+    height: auto;
+    width:450px;
     background-color: rgba(94, 56, 11, 0.582);
     border-radius: 20px;
     display: grid;
@@ -132,10 +133,12 @@
 }
 .input-data{
     height: 40px;
+    margin-top: 20px;
     box-shadow: 4px 4px 4px 4px black;
 }
 .input-data-date{
     height: 40px;
+    margin-top: 20px;
     width: 208px;
     box-shadow: 4px 4px 4px 4px black;
 
@@ -161,7 +164,7 @@
 }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 780px) {
 
     .profile-pic {
         height: 80px;
@@ -189,6 +192,7 @@
     .table-cust-data, .table-cust-data2 {
         font-size: 8px; 
         padding: 5px; 
+        margin-top: 10px
     }
 
     .table-cust-head{
