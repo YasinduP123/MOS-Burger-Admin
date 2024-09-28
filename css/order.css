@@ -1,3 +1,5 @@
+@media (max-width: 3600px) {
+    
 .img-add{
     justify-content: center;
     align-items: center;
@@ -157,6 +159,189 @@
     background-color:rgb(15, 96, 15);
     color: gray;
 }
+}
 
+
+@media (max-width: 460px) {
+    .img-add{
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .profile-pic{
+        border: 4px solid black;
+        align-items: center;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        background-image: url("Shah_Rukh_Khan.jpg");
+        background-position: center;
+        background-size: cover;
+        margin-left: 30px;
+        
+    }
+    .customer-card{
+        height: 690px;
+        width: 600px;
+        background-color: rgba(6, 18, 63, 0.881);   
+        border-radius: 40px;
+        padding-top: 30px;
+        margin-left: 80px;
+        display: grid;
+        color: white;
+        justify-self: center;
+        margin-bottom: 20px;
+    }
+    .customers-table{
+        display: flex;
+        margin: 0px;
+        margin-top:-66px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .table-cust-row,.table-cust-data{
+        padding: 10px;
+        font-size: 10px;
+        
+    }
+    
+    .table-cust-data2,.table-cust-data2{
+        padding: 0px;
+        font-size: 10px;
+        text-align: right;
+        background-color: rgb(0, 0, 0);
+        border:7px solid blue;
+        border-radius: 40px;
+    
+    }
+    
+
+
+    .table-cust-head{
+
+    }
+
+    .table-cust-head2{
+        padding-left: 10px;
+    }
+    
+    .bio{
+        
+    }
+    .customer-card {
+        height: 400px;
+        width: 180px;
+        margin-left: 0px; 
+        padding-top: 20px;
+    }
+
+    .customers-table {
+        flex-direction: column; 
+        margin-left: 0px;
+        
+    }
+
+    .table-cust-data, .table-cust-data2 {
+        font-size: 8px; 
+        padding: 5px; 
+    }
+
+    .btn-add-input{
+        width: 130px;
+        height: 40px;
+        margin-left: 80px;
+        margin-top: 20px;
+        font-size: 10px;
+    }
+
+    .home-view{
+        height: auto ;
+        margin-left:20px;
+        padding-top: 90px;
+        width: 300px;
+    }
+    .add-customer-form{
+        height: auto ;
+        padding-bottom: 10px;
+        width: 250px;
+        background-color: rgba(94, 56, 11, 0.582);
+        border-radius: 20px;
+        justify-content: center;
+        padding-left: 40px;
+        padding-right: 40px;
+        
+    }
+    .add-customer-form-ProfPic{
+        height: 100px;
+        width: 100px;
+        background-color: rgba(0, 0, 0, 0.616);
+        margin-top: 40px;
+        border-radius: 50%;
+        text-align: center;
+        align-items: center;
+        font-weight: 600;
+        font-size: 50px;
+        color: rgba(255, 255, 255, 0.566);
+        padding-top: 13px;
+        margin-left: 60px;
+        margin-bottom: 50px;
+    
+    }
+    
+    .add-customer-form-table{
+        font-size: 10px;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+    }
+    .input-data{
+        height: 20px;
+        box-shadow: 4px 4px 4px 4px black;
+        font-size: 10px;
+        margin-top: 10px;
+    }
+
+    .input-data:placeholder-shown , .input-data-date:placeholder-shown{
+        font-size: 10px;
+    }
+
+    .input-data-date{
+        height: 20px;
+        margin-top: 10px;
+        width: 208px;
+        box-shadow: 4px 4px 4px 4px black;
+        font-size: 10px;
+    }
+    
+    .add-customer-form-button{
+        margin-left: 150px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color:rgb(30, 204, 30); /* Circle background color */
+        color: white;
+        text-align: center;
+        line-height: 50px;
+        font-size: 30px;
+        font-weight: bold;
+        font-family: Arial, sans-serif;
+    }
+    
+    .add-customer-form-button:active{
+        background-color:rgb(15, 96, 15);
+        color: gray;
+    }
+
+    .add-customer-form-details{
+        margin-top:30px;
+    }
+
+    .customers-table{
+        width: auto;
+    }
+}
 
 

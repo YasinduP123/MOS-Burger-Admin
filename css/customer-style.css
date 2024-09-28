@@ -1,3 +1,4 @@
+@media (max-width: 3868px) {
 .img-add{
     justify-content: center;
     align-items: center;
@@ -22,7 +23,7 @@
     background-color: rgba(6, 18, 63, 0.881);   
     border-radius: 40px;
     padding-top: 30px;
-    margin-left: 80px;
+    margin-left: 80px auto;
     display: grid;
     color: white;
     justify-self: center;
@@ -37,6 +38,8 @@
     margin-top:-66px;
     align-items: center;
     justify-content: center;
+    width: auto;
+    margin-right: 30px;
 }
 
 .table-cust-row,.table-cust-data{
@@ -72,7 +75,7 @@
 }
 
 .bio{
-    
+    font-size: 10px;
 }
 .table-cust-data{
     text-align: left;
@@ -156,6 +159,85 @@
     background-color:rgb(15, 96, 15);
     color: gray;
 }
+}
 
+@media (max-width: 450px) {
 
+    .profile-pic {
+        height: 80px;
+        width: 80px;
+        margin-left: 30px; 
+    }
+
+    .input-data:placeholder-shown, .input-data-date:placeholder-shown{
+        font-size: 10px;
+    }
+
+    .customer-card {
+        height: 400px;
+        width: 180px;
+        margin-left: 0px; 
+        padding-top: 20px;
+    }
+
+    .customers-table {
+        flex-direction: column; 
+        margin-left: 20px;
+        
+    }
+
+    .table-cust-data, .table-cust-data2 {
+        font-size: 8px; 
+        padding: 5px; 
+    }
+
+    .table-cust-head{
+
+    }
+
+    .table-cust-head2{
+        padding-left: 10px;
+    }
+
+    .add-customer-form {
+        height: 450px;
+        width: 180px;
+        font-size: 8px; 
+        padding-top: 10px; 
+    }
+
+    .add-customer-form-ProfPic {
+        height: 80px;
+        width: 80px;
+        margin-left: 40px;
+        margin-bottom: 10px; 
+    }
+
+    .input-data, .input-data-date {
+        height: 25px;
+        width: 160px; 
+        box-shadow: 2px 2px 2px 2px black;
+        margin-top: 10px;
+        font-size: 10px;
+    }
+
+    .add-customer-form-button {
+        margin-left: 80px;
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        line-height: 40px;
+    }
+
+    .home-view {
+        height: auto;
+        width:  auto;
+        padding: 10px;
+    }
+
+    .customers-table{
+         width: auto;   
+    }
+
+}
 

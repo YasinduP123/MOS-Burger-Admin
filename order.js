@@ -4,10 +4,22 @@ let inputContainer = document.getElementById("inputContainer")
 
 function addRowBtnOnAction(){
     
+    inputContainer.appendChild(document.createElement('br'));
+    
     let inpField = document.createElement('input');
+    let qtyField = document.createElement('input');
     inpField.type = 'text';
+    qtyField.type = 'number';
+    inpField.placeholder = "Item";
+    inpField.classList.add('form-control');
+    inpField.classList.add('input-data');
+
+    qtyField.placeholder = "Qty";
+    qtyField.classList.add('form-control');
+    qtyField.classList.add('input-data');
 
     inputContainer.appendChild(inpField);
+    inputContainer.appendChild(qtyField);
 
 }
 

@@ -5,7 +5,16 @@ body{
     background-size: cover;
 }
 
+.nav-buttons:hover{
+    background-color: rgba(255, 4, 4, 0.803);
+}
+
+.navbar-toggler{
+    margin-left: -60px;
+}
+
 @media (max-width:3600px) {
+    
 .home-view{
 
     background-color: rgba(255, 255, 255, 0.395);
@@ -229,13 +238,16 @@ td{
 .home-view{
 
     background-color: rgba(255, 255, 255, 0.395);
-    height: 1200px;
+    height: auto;
     margin-top: 10px;
     margin-right: 50px;
     margin-left: 50px;
     margin-bottom: 40px;
     border-radius: 30px;
     padding-right: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 5px;
     
 }
 
@@ -492,7 +504,31 @@ td{
     background-color: rgb(4, 104, 4);
 }
 
-@media (max-width:3600px) {
+@media (max-width:460px) {
+.btn-customize{
+    width: 40px;
+}    
+
+.btn-panel{
+    border-collapse: collapse;
+}
+
+.home-view{
+    width: 320px;
+    height : 3100px;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 40px;
+}    
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 300px;
+}
+
 .home-view-items{
     background-color: rgba(255, 255, 255, 0.395);
     height: 4300px;
