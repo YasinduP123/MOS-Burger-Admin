@@ -69,7 +69,8 @@
           <div class="row">  
 
                 <div class="col">
-                <div class="add-customer-form">    
+                <!-- <div class="add-customer-form ">    
+                <div class="add-customer-form pb-3" style=" width: auto;">    
                     <div class="add-customer-form-ProfPic">
                         <h1> +</h1>
                     </div>
@@ -77,33 +78,69 @@
                     <table class="add-customer-form-table">
                         <tr>
                         
-                            <input type="text" class="form-control input-data" aria-describedby="emailHelp" placeholder="Enter email" id="inputCustomerName">
+                            <input type="text" class="form-control input-data" aria-describedby="emailHelp" placeholder="Customer ID" id="inputCustomerId">
                         </tr>
                         <tr>
-                                <input type="text" class="form-control input-data"aria-describedby="emailHelp" placeholder="Age" id="inputCustomerAge">
+                                <input type="text" class="form-control input-data"aria-describedby="emailHelp" placeholder="Name" id="inputCustomerName">
                         </tr>
                         <tr> 
-                                <input type="text" class="form-control input-data"  aria-describedby="emailHelp" placeholder="Favourite Item" id="inputCustomerFavouriteItem">
+                                <input type="text" class="form-control "  aria-describedby="emailHelp" placeholder="Favourite Item" id="inputCustomerFavouriteItem">
                         </tr>
                         <tr>
-                               <input class="form-control input-data-date" type="date" placeholder="Birthday" id="inputCustomerBDay">
+                               <input class="form-control" type="date" placeholder="Birthday" id="inputCustomerBDay">
                         </tr>
                         <tr>
-                                <input class="form-control  input-data " type="text" placeholder="Address" id="inputCustomerAddress">
+                                <input class="form-control " type="text" placeholder="Address" id="inputCustomerAddress">
                         </tr>
                         <tr>
-                                <input class="form-control  input-data" type="text" placeholder="Most Ordered Item" id="inputCustomerMostOrderdItem">
+                                <input class="form-control" type="text" placeholder="Most Ordered Item" id="inputCustomerMostOrderdItem">
                         </tr>
                     </table>
                 </div>
+                </div>
+                
                 <span >
-                    <Button class="add-customer-form-button" id="addCustomerBtnOnAction">+</Button>
+                    <Button class="add-customer-form-update-button btn btn-primary mt-1 mb-4" id="searchCustomerBtnOnAction">Search</Button>
+                    <Button class="add-customer-form-update-button btn btn-danger mt-1 mb-4" id="deleteCustomerBtnOnAction">Delete</Button>
+                    <Button class="add-customer-form-update-button btn btn-secondary mt-1 mb-4" id="updateCustomerBtnOnAction">Update</Button>
+                    <Button class="add-customer-form-update-button btn btn-success mt-1 mb-4" id="addCustomerBtnOnAction">Add</Button>
                 </span>
                 <div class="add-customer-form-clear">
 
                 </div>
+                
+              </div> -->
+              <form>
+                <div class="container rounded-4 p-3" style="background-color: rgba(0, 0, 0, 0.592);">
+                <div class="container rounded-4 p-3" style="background-color: rgba(0, 0, 0, 0.592);">
+                    <h3 style="color: white;">
+                        Add New Customer
+                    </h3>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" aria-describedby="emailHelp" placeholder="Customer ID" id="inputCustomerId">
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control"aria-describedby="emailHelp" placeholder="Name" id="inputCustomerName">
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control "  aria-describedby="emailHelp" placeholder="Favourite Item" id="inputCustomerFavouriteItem">
+                    </div>
+                    <div class="mb-3 ">
+                        <input class="form-control" s type="date" aria-describedby="emailHelp" placeholder="Birthday" id="inputCustomerBDay">
+                    </div>
+                    <div class="mb-3">
+                        <input class="form-control " type="text" placeholder="Address" id="inputCustomerAddress">
+                    </div>
+                    <div class="mb-3">
+                        <input class="form-control" type="text" placeholder="Most Ordered Item" id="inputCustomerMostOrderdItem">
+                    </div>
 
-              </div>
+                    <Button type="button" class=" btn btn-primary mt-1 mb-4" id="searchCustomerBtnOnAction">Search</Button>
+                    <Button type="button" class=" btn btn-danger mt-1 mb-4" id="deleteCustomerBtnOnAction">Delete</Button>
+                    <Button type="button" class=" btn btn-secondary mt-1 mb-4" id="updateCustomerBtnOnAction">Update</Button>
+                    <Button type="button" class=" btn btn-success mt-1 mb-4" id="addCustomerBtnOnAction">Add Custom</Button>
+                </div>
+                </div>
             </div>
             <div class="col view-customer-form" id="customerCard">
          

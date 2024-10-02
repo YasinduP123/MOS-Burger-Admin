@@ -1,4 +1,6 @@
-@media (max-width: 3868px) {
+
+
+@media (max-width: 773868px) {
 .img-add{
     justify-content: center;
     align-items: center;
@@ -14,11 +16,11 @@
     background-image: url("Shah_Rukh_Khan.jpg");
     background-position: center;
     background-size: cover;
-    margin-left: 220px;
+    margin-left: 120px;
     
 }
 .customer-card{
-    height: 690px;
+    height: 780px;
     width: 400px;
     background-color: rgba(6, 18, 63, 0.881);   
     border-radius: 40px;
@@ -60,14 +62,14 @@
 }
 
 .table-cust-head{
-    margin-top: 0px;
+    margin-top: auto;
     padding-top: 0px;
     padding-bottom: 40px;
     text-align: right;
     text-align: center;
 }
 .table-cust-head2{
-    margin-top: 0px;
+    margin-top: auto;
     padding-top: 0px;
     padding-left: 90px;
     padding-bottom: 40px;
@@ -131,17 +133,16 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 }
-.input-data{
+.input-data {
     height: 40px;
     margin-top: 20px;
     box-shadow: 4px 4px 4px 4px black;
 }
+
 .input-data-date{
     height: 40px;
     margin-top: 20px;
-    width: 208px;
     box-shadow: 4px 4px 4px 4px black;
-
 }
 
 .add-customer-form-button{
@@ -156,15 +157,158 @@
     font-size: 30px;
     font-weight: bold;
     font-family: Arial, sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .add-customer-form-button:active{
     background-color:rgb(15, 96, 15);
     color: gray;
 }
+
+.add-customer-form-edit-btn{
+    line-height:0px;
+    width:80px;
+    height: 40px;
+    padding-bottom:10px;
+    margin-Left: 30px;
+    font-size: 20px;
+}
+
+.nav-buttons{
+    font-size: 15px;
+}
+
+.add-customer-form-update-button{
+    font-size: 20px;
+}
 }
 
 @media (max-width: 780px) {
+
+    .profile-pic {
+        height: 100px;
+        width: 100px;
+        margin-left: 120px; 
+    }
+
+    .input-data:placeholder-shown, .input-data-date:placeholder-shown{
+        font-size: 20px;
+    }
+
+    .input-data-date{
+        font-size: 20px;
+    }
+
+    .customer-card {
+        height: 550px;
+        width: 380px;
+        margin-left: 0px; 
+        padding-top: 20px;
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+
+    .customers-table {
+        flex-direction: column; 
+        margin-left: 20px;
+        width: auto;
+        margin-top: 0px;
+    }
+
+    .table-cust-data, .table-cust-data2 {
+        font-size: 20px; 
+        padding: 5px; 
+        margin-top: 10px
+    }
+
+    .table-cust-head{
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .table-cust-head2{
+        margin: auto; 
+        padding-left: 10px;
+        margin-top: 10px;
+    }
+
+
+    .add-customer-form {
+        height: 450px;
+        width: 180px;
+        font-size: 20px; 
+        padding-top: 10px; 
+    }
+
+    .add-customer-form-ProfPic {
+        height: 100px;
+        width: 100px;
+        margin-left: 40px;
+        margin-bottom: 10px; 
+    }
+
+    .input-data, .input-data-date {
+        height: 55px;
+        width: 260px; 
+        box-shadow: 2px 2px 2px 2px black;
+        margin-top: 40px;
+        font-size: 20px;
+    }
+
+    .add-customer-form-button {
+        margin-left: 80px;
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
+        line-height: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .home-view {
+        height: auto;
+        width:  auto;
+        padding: 10px;
+    }
+
+    .add-customer-form{
+        height: auto;
+        width: 380px;
+        font-size: 20px; 
+        padding-top: 10px;
+        padding-left: 30px;
+
+    }
+ 
+    .add-customer-form-edit-btn{
+        line-height:0px;
+        width:80px;
+        height: 40px;
+        padding-bottom:10px;
+        margin-Left: 30px;
+        font-size: 20px;
+        
+    }
+
+    .nav-buttons{
+        font-size: 15px;
+    }
+
+    .nav-buttons:hover{
+        color: red;
+    }
+    
+    .add-customer-form-update-button{
+        font-size: 20px;
+        
+    }
+
+
+
+}
+
+@media (max-width: 480px) {
 
     .profile-pic {
         height: 80px;
@@ -177,37 +321,49 @@
     }
 
     .customer-card {
-        height: 400px;
+        height: 500px ;
         width: 180px;
         margin-left: 0px; 
         padding-top: 20px;
+        margin-bottom: 10px;
+        font-size: 20px;
     }
 
     .customers-table {
         flex-direction: column; 
         margin-left: 20px;
-        
+        width: auto;
+        margin-top: 0px;
     }
 
     .table-cust-data, .table-cust-data2 {
-        font-size: 8px; 
+        font-size: 10px; 
         padding: 5px; 
         margin-top: 10px
     }
 
     .table-cust-head{
 
+        margin: auto;
+        margin-top: 20px;
+        font-size: 10px;
     }
 
     .table-cust-head2{
+        margin: auto; 
         padding-left: 10px;
+        margin-top: 10px;
+        font-size: 10px;
     }
+
 
     .add-customer-form {
         height: 450px;
         width: 180px;
-        font-size: 8px; 
+        font-size: 20px; 
         padding-top: 10px; 
+        padding-left: 10px;
+
     }
 
     .add-customer-form-ProfPic {
@@ -227,10 +383,12 @@
 
     .add-customer-form-button {
         margin-left: 80px;
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
         font-size: 20px;
-        line-height: 40px;
+        line-height: 20px;
+        margin-top: 0px;
+        margin-bottom: 0px;
     }
 
     .home-view {
@@ -238,10 +396,25 @@
         width:  auto;
         padding: 10px;
     }
-
-    .customers-table{
-         width: auto;   
+    
+    .add-customer-form-edit-btn{
+        line-height:7px;
+        width:60px;
+        height: 20px;
+        padding-bottom:10px;
+        margin-Left: 30px;
+        font-size: 10px;
     }
 
+    .nav-buttons{
+        font-size: 15px;
+    }
+    .nav-buttons:hover{
+        color: red;
+    }
+
+    .add-customer-form-update-button{
+        font-size: 10px;
+    }
 }
 
