@@ -137,7 +137,7 @@ let pasta = [
   { itemCode: "B1032", itemName: "Chicken Penne Pasta", price: 1700.00, discount: "-", stock: 42, image: "images/chickenPennePasta.jpg" },
   { itemCode: "B1033", itemName: "Ground Turkey Pasta Bake", price: 2900.00, discount: "10%", stock: 38, image: "images/turkeyPastaBake.jpg" },
   { itemCode: "B1034", itemName: "Creamy Shrimp Pasta", price: 2000.00, discount: "-", stock: 44, image: "images/creamyShrimpPasta.jpeg" },
-  { itemCode: "B1035", itemName: "Lemon Butter Pasta", price: 1950.00, discount: "-", stock: 36, image: "images/lemonButterPasta.jpeg" },
+  { itemCode: "B1035", itemName: "Lemon Butter Pasta", price: 1950.00, discount: "-", stock: 36, image: "images/lemonButterPasta.jpg" },
   { itemCode: "B1036", itemName: "Tagliatelle Pasta", price: 2400.00, discount: "1%", stock: 28, image: "images/tagliatellePasta.jpg" },
   { itemCode: "B1037", itemName: "Baked Ravioli", price: 2000.00, discount: "1%", stock: 30, image: "images/bakedRavioli.jpg" }
 ];

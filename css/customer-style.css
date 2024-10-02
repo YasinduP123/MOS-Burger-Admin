@@ -4,21 +4,20 @@
 .img-add{
     justify-content: center;
     align-items: center;
-
-
 }
+
 .profile-pic{
     border: 4px solid black;
     align-items: center;
     height: 140px;
     width: 140px;
     border-radius: 50%;
-    background-image: url("Shah_Rukh_Khan.jpg");
+    background-image: url("profile pic.jpg");
     background-position: center;
     background-size: cover;
     margin-left: 120px;
-    
 }
+
 .customer-card{
     height: 780px;
     width: 400px;
