@@ -349,7 +349,7 @@
     .customers-table{
         width: auto;
     } */
-
+    
 
 
 @media (max-width: 111360px) {
@@ -379,7 +379,6 @@
         height: auto;
         width: auto;
         margin-top: 50px;
-        margin : auto;
     }
 
     .container{
@@ -413,8 +412,6 @@
     .home-view-items{
         height: auto;
         width: auto;
-        margin: auto;
-        margin-left: auto;
         padding: 10px;
     }
 }

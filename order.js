@@ -166,7 +166,7 @@ document.getElementById("btnViewBurger").addEventListener("click", () => {
     burgers.forEach(item => {
         cardBody += `
                      <div class="card m-3 p-3 rounded-5 bg-danger" style="width: 18rem;">
-                            <img  src="${item.image}" class="card-img-top rounded-5" alt="...">
+                            <img  src="${item.image}" style="height:200px"  class="card-img-top rounded-5" alt="...">
                             <div class="card-body">
                               <h5 class="card-title text-light">${item.itemName}</h5>
                             </div>
@@ -192,7 +192,7 @@ document.getElementById("btnViewSubmarine").addEventListener("click", () => {
     submarines.forEach(item => {
         cardBody += `
                      <div class="card m-3 p-3 rounded-5 bg-danger" style="width: 18rem;">
-                            <img  src="${item.image}" class="card-img-top rounded-5" alt="...">
+                            <img  src="${item.image}" class="card-img-top rounded-5" style="height:200px" alt="...">
                             <div class="card-body">
                               <h5 class="card-title text-light">${item.itemName}</h5>
                             </div>
@@ -216,7 +216,7 @@ document.getElementById("btnViewFries").addEventListener("click", () => {
     fries.forEach(item => {
         cardBody += `
                      <div class="card m-3 p-3 rounded-5 bg-danger" style="width: 18rem;">
-                            <img  src="${item.image}" class="card-img-top rounded-5" alt="...">
+                            <img style="height:200px" src="${item.image}" class="card-img-top rounded-5" alt="...">
                             <div class="card-body">
                               <h5 class="card-title text-light">${item.itemName}</h5>
                             </div>
@@ -240,7 +240,7 @@ document.getElementById("btnViewPasta").addEventListener("click", () => {
     pasta.forEach(item => {
         cardBody += `
                      <div class="card m-3 p-3 rounded-5 bg-danger" style="width: 18rem;">
-                            <img  src="${item.image}" class="card-img-top rounded-5" alt="...">
+                            <img style="height:200px" src="${item.image}" class="card-img-top rounded-5" alt="...">
                             <div class="card-body">
                               <h5 class="card-title text-light">${item.itemName}</h5>
                             </div>
@@ -264,7 +264,7 @@ document.getElementById("btnViewChicken").addEventListener("click", () => {
     chicken.forEach(item => {
         cardBody += `
                      <div class="card m-3 p-3 rounded-5 bg-danger" style="width: 18rem;">
-                            <img  src="${item.image}" class="card-img-top rounded-5" alt="...">
+                            <img style="height:200px" src="${item.image}" class="card-img-top rounded-5" alt="...">
                             <div class="card-body">
                               <h5 class="card-title text-light">${item.itemName}</h5>
                             </div>
@@ -288,7 +288,7 @@ document.getElementById("btnViewDrinks").addEventListener("click", () => {
     drinks.forEach(item => {
         cardBody += `
                      <div class="card m-3 p-3 rounded-5 bg-danger" style="width: 18rem;">
-                            <img  src="${item.image}" class="card-img-top rounded-5" alt="...">
+                            <img style="height:250px" src="${item.image}" class="card-img-top rounded-5" alt="...">
                             <div class="card-body">
                               <h5 class="card-title text-light">${item.itemName}</h5>
                             </div>

@@ -1,4 +1,4 @@
-window.onload = loadItemTable;
+window.onload = loadItemDetails;
 
 let tableBody = `
                         <thead>
@@ -111,19 +111,32 @@ function loadItemTable() {
 
 }
 
+function loadItemDetails() {
+    let tableBody = `
+    <thead>
+      <tr>
+        <th scope="col">Item Code</th>
+        <th scope="col">Item Name</th>
+        <th scope="col">Price</th>
+        <th scope="col">Discount</th>
+      </tr>
+    </thead>
+
+`
 itemList.forEach(items => {
-    tableBody += `
-        <tr>
-            <th scope="row">${items.itemCode}</th>
-            <td>${items.itemName}</td>
-            <td>${items.price}</td>
-            <td>${items.discount}</td>
-        </tr>
-    `;
-})
+        tableBody += `
+            <tr>
+                <th scope="row">${items.itemCode}</th>
+                <td>${items.itemName}</td>
+                <td>${items.price}</td>
+                <td>${items.discount}</td>
+            </tr>
+        `;
+    })
 
-
-
+    let item = document.getElementById("addNewItems");
+    item.innerHTML = tableBody;
+}
 
 document.getElementById("btnSearchItemEvent").addEventListener("click", () => {
     let searchItem = document.getElementById("inpItemCode").value;
@@ -177,6 +190,8 @@ document.getElementById("btnDeleteItemEvent").addEventListener("click", () => {
         console.log(itemList);
 
     }
+    
+    loadItemDetails()
 
 })
 
@@ -200,4 +215,6 @@ document.getElementById("btnUpdateItemEvent").addEventListener("click", () => {
         alert("Item updated successfully!");
         console.log(itemList);
     }
+    loadItemDetails()
 })
+
