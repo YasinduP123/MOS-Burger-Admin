@@ -71,15 +71,11 @@ let discount = "";
 
 // document.getElementById("btnDeleteItem").addEventListener("click",btnDeleteItemOnAction);
 function btnAddNewItemOnAction() {
-    loadItemTable();
+    addNewItemTable();
         alert("Item added successfully.");
 }
 
-
-
-
-
-function loadItemTable() {
+function addNewItemTable() {
     let inpItemCode = document.getElementById("inpItemCode").value;
     let inpItemName = document.getElementById("inpItemName").value;
     let inpPrice = document.getElementById("inpPrice").value;
@@ -93,26 +89,13 @@ function loadItemTable() {
     }
 
     itemList.push(itemDetail);
-
-    tableBody += `
-            <tr>
-                <th scope="row">${inpItemCode}</th>
-                <td>${inpItemName}</td>
-                <td>${inpPrice}</td>
-                <td>${inpDiscount}</td>
-            </tr>    
-            `;
-
-    let item = document.getElementById("addNewItems");
-    item.innerHTML = tableBody;
-
-    console.log("itemList ", itemList);
-
+    loadItemDetails()
 
 }
 
 function loadItemDetails() {
-    let tableBody = `
+    
+    tableBody = `
     <thead>
       <tr>
         <th scope="col">Item Code</th>
@@ -121,8 +104,8 @@ function loadItemDetails() {
         <th scope="col">Discount</th>
       </tr>
     </thead>
-
 `
+
 itemList.forEach(items => {
         tableBody += `
             <tr>

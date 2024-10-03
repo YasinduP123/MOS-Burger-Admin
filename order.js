@@ -1,57 +1,57 @@
 
 
-document.getElementById("addInputButton").addEventListener("click", addRowBtnOnAction);
-let inputContainer = document.getElementById("inputContainer")
+// document.getElementById("addInputButton").addEventListener("click", addRowBtnOnAction);
+// let inputContainer = document.getElementById("inputContainer")
 
-let input = 1;
-function addRowBtnOnAction() {
+// let input = 1;
+// function addRowBtnOnAction() {
 
-    inputContainer.appendChild(document.createElement('br'));
+//   inputContainer.appendChild(document.createElement('br'));
 
-    let inpField = document.createElement('input');
-    let qtyField = document.createElement('input');
+//   let inpField = document.createElement('input');
+//   let qtyField = document.createElement('input');
 
-    inpField.id = `inpField${input}`
-    qtyField.id = `qtyField${input}`
+//   inpField.id = `inpField${input}`
+//   qtyField.id = `qtyField${input}`
 
-    console.log(`inpField${input}`);
-    console.log(`qtyField${input}`);
+//   console.log(`inpField${input}`);
+//   console.log(`qtyField${input}`);
 
-    inpField.type = 'text';
-    qtyField.type = 'number';
+//   inpField.type = 'text';
+//   qtyField.type = 'number';
 
-    inpField.placeholder = `Item ${input}`;
-    qtyField.placeholder = 'Qty';
+//   inpField.placeholder = `Item ${input}`;
+//   qtyField.placeholder = 'Qty';
 
-    inpField.classList.add('form-control', 'input-data');
-    qtyField.classList.add('form-control', 'input-data');
+//   inpField.classList.add('form-control', 'input-data');
+//   qtyField.classList.add('form-control', 'input-data');
 
-    inputContainer.appendChild(inpField);
-    inputContainer.appendChild(qtyField);
+//   inputContainer.appendChild(inpField);
+//   inputContainer.appendChild(qtyField);
 
-    input++;
-}
-
-
-{
-    let customerCard = document.getElementById("customerCard");
-    document.getElementById("addCustomerBtnOnAction").addEventListener("click", addCustomerOnAction);
+//   input++;
+// }
 
 
-
-
-    let cardBody = "";
+// {
+//   let customerCard = document.getElementById("orderCard");
+//   document.getElementById("addCustomerBtnOnAction").addEventListener("click", addCustomerOnAction);
 
 
 
-    function addCustomerOnAction() {
-        let inputCustomerName = document.getElementById("inputCustomerName").value;
-        let inputCustomerAge = document.getElementById("inputCustomerAge").value;
-        let inputCustomerFavouriteItem = document.getElementById("inputCustomerFavouriteItem").value;
-        let inputCustomerBDay = document.getElementById("inputCustomerBDay").value;
-        let inputCustomerAddress = document.getElementById("inputCustomerAddress").value;
-        let inputCustomerMostOrderdItem = document.getElementById("inputCustomerMostOrderdItem").value;
-        cardBody += `
+
+  let cardBody = "";
+
+
+
+  function addCustomerOnAction() {
+    let inputCustomerName = document.getElementById("inputCustomerName").value;
+    let inputCustomerAge = document.getElementById("inputCustomerAge").value;
+    let inputCustomerFavouriteItem = document.getElementById("inputCustomerFavouriteItem").value;
+    let inputCustomerBDay = document.getElementById("inputCustomerBDay").value;
+    let inputCustomerAddress = document.getElementById("inputCustomerAddress").value;
+    let inputCustomerMostOrderdItem = document.getElementById("inputCustomerMostOrderdItem").value;
+    cardBody += `
     <div class="customer-card"> 
 <div class="profile-pic">
     <!-- // -->
@@ -89,26 +89,26 @@ function addRowBtnOnAction() {
 
     `
 
-        customerCard.innerHTML = cardBody;
-    }
+    orderCard.innerHTML = cardBody;
+  }
 
-}
+// }
 
 let burgers = [
-  { itemCode: "B1001", itemName: "Classic Burger (Large)", price: 750.00, discount: "-", stock: 58 , image: "images/classicBurger.png" },
+  { itemCode: "B1001", itemName: "Classic Burger (Large)", price: 750.00, discount: "-", stock: 58, image: "images/classicBurger.png" },
   { itemCode: "B1002", itemName: "Classic Burger (Regular)", price: 1500.00, discount: "15%", stock: 82, image: "images/classicBurger.png" },
-  { itemCode: "B1003", itemName: "Turkey Burger", price: 1600.00, discount: "-", stock: 40, image:"images/TurkeyBurger.jpg" },
-  { itemCode: "B1004", itemName: "Chicken Burger (Large)", price: 1400.00, discount: "-", stock: 92, image:"images/chickenBurger.jpg" },
-  { itemCode: "B1005", itemName: "Chicken Burger (Regular)", price: 800.00, discount: "20%", stock: 73, image:"images/chickenBurger.jpg" },
-  { itemCode: "B1006", itemName: "Cheese Burger (Large)", price: 1000.00, discount: "-", stock: 67, image:"images/cheeseBurger.jpg" },
-  { itemCode: "B1007", itemName: "Cheese Burger (Regular)", price: 600.00, discount: "-", stock: 84 ,image:"images/cheeseBurger.jpg"},
-  { itemCode: "B1008", itemName: "Bacon Burger", price: 650.00, discount: "15%", stock: 61, image:"images/baconBurger.jpg" },
-  { itemCode: "B1009", itemName: "Shawarma Burger", price: 800.00, discount: "-", stock: 56, image:"images/shawarmaBurger.jpg" },
-  { itemCode: "B1010", itemName: "Olive Burger", price: 1800.00, discount: "-", stock: 42, image:"images/oliveBurger.jpg" },
-  { itemCode: "B1012", itemName: "Double-Cheese Burger", price: 1250.00, discount: "20%", stock: 50, image:"images/doubleCheeseBurger.jpg" },
-  { itemCode: "B1013", itemName: "Crispy Chicken Burger (Regular)", price: 1200.00, discount: "-", stock: 76, image:"images/crispyChicken.jpg" },
-  { itemCode: "B1014", itemName: "Crispy Chicken Burger (Large)", price: 1600.00, discount: "10%", stock: 68, image:"images/crispyChicken.jpg" },
-  { itemCode: "B1015", itemName: "Paneer Burger", price: 900.00, discount: "-", stock: 79, image:"images/paneerBurger.jpg" }
+  { itemCode: "B1003", itemName: "Turkey Burger", price: 1600.00, discount: "-", stock: 40, image: "images/TurkeyBurger.jpg" },
+  { itemCode: "B1004", itemName: "Chicken Burger (Large)", price: 1400.00, discount: "-", stock: 92, image: "images/chickenBurger.jpg" },
+  { itemCode: "B1005", itemName: "Chicken Burger (Regular)", price: 800.00, discount: "20%", stock: 73, image: "images/chickenBurger.jpg" },
+  { itemCode: "B1006", itemName: "Cheese Burger (Large)", price: 1000.00, discount: "-", stock: 67, image: "images/cheeseBurger.jpg" },
+  { itemCode: "B1007", itemName: "Cheese Burger (Regular)", price: 600.00, discount: "-", stock: 84, image: "images/cheeseBurger.jpg" },
+  { itemCode: "B1008", itemName: "Bacon Burger", price: 650.00, discount: "15%", stock: 61, image: "images/baconBurger.jpg" },
+  { itemCode: "B1009", itemName: "Shawarma Burger", price: 800.00, discount: "-", stock: 56, image: "images/shawarmaBurger.jpg" },
+  { itemCode: "B1010", itemName: "Olive Burger", price: 1800.00, discount: "-", stock: 42, image: "images/oliveBurger.jpg" },
+  { itemCode: "B1012", itemName: "Double-Cheese Burger", price: 1250.00, discount: "20%", stock: 50, image: "images/doubleCheeseBurger.jpg" },
+  { itemCode: "B1013", itemName: "Crispy Chicken Burger (Regular)", price: 1200.00, discount: "-", stock: 76, image: "images/crispyChicken.jpg" },
+  { itemCode: "B1014", itemName: "Crispy Chicken Burger (Large)", price: 1600.00, discount: "10%", stock: 68, image: "images/crispyChicken.jpg" },
+  { itemCode: "B1015", itemName: "Paneer Burger", price: 900.00, discount: "-", stock: 79, image: "images/paneerBurger.jpg" }
 ];
 
 let submarines = [
@@ -158,153 +158,432 @@ let drinks = [
   { itemCode: "B1047", itemName: "Mirinda (330ml)", price: 850.00, discount: "7%", stock: 125, image: "images/mirinda.jpg" }
 ];
 
+let orderDetailList = [];
 
+function loadItemCard() {
+  let index = 0;
+  let cardBody = "";
+  
+  burgers.forEach(item => {
+    cardBody += `
+      <div class="card m-3 p-3 rounded-5 bg-danger" style="width: 18rem;">
+        <img style="height:200px" src="${item.image}" class="card-img-top rounded-5" alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-light">${item.itemName}</h5>
+        </div>
+        <ul class="list-group list-group-flush bg-light">
+          <li class="list-group-item bg-danger text-light">Item Code &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;:&nbsp; &nbsp;&nbsp; &nbsp;${item.itemCode}</li>
+          <li class="list-group-item bg-danger text-light">Unit price &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; :&nbsp;&nbsp; &nbsp;  &nbsp;${item.price}</li>
+          <li class="list-group-item bg-danger id=burgerStock${index} text-light">Quantity &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; : &nbsp; &nbsp; &nbsp;${item.stock}</li>
+        </ul>
+        <div class="card-body">
+          <div class="form-outline w-50">
+            <input type="number" id="burgerQty_${index}" min=0 max=${item.stock} class="form-control text-light mb-3 w-75" placeholder="Qty" style="background-color:red;" />
+          </div>
+          <button class="btn btn-success" id="burger_${index}">Add to cart</button>
+        </div>
+      </div>
+    `;
+    index++;
+  });
+
+  document.getElementById("orderCard").innerHTML = cardBody;
+}
+
+
+// ====================================================VIEW BURGER==========================================================
 
 document.getElementById("btnViewBurger").addEventListener("click", () => {
-    let index = 0;
-    let cardBody = "";
-    burgers.forEach(item => {
-        cardBody += `
-                     <div class="card m-3 p-3 rounded-5 bg-danger" style="width: 18rem;">
-                            <img  src="${item.image}" style="height:200px"  class="card-img-top rounded-5" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title text-light">${item.itemName}</h5>
-                            </div>
-                            <ul class="list-group list-group-flush bg-light">
-                              <li class="list-group-item bg-danger text-light">Item Code &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;:&nbsp; &nbsp;&nbsp; &nbsp;${item.itemCode}</li>
-                              <li class="list-group-item bg-danger text-light">unit price &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; :&nbsp;&nbsp; &nbsp;  &nbsp;${item.price}</li>
-                              <li class="list-group-item bg-danger text-light">Quentity &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; : &nbsp; &nbsp; &nbsp;${item.stock}</li>
-                            </ul>
-                            <div class="card-body">
-                              <button id="burger_${index}" class="btn btn-success">Add to cart</button>
-                            </div>
-                    </div>
-        `
-        console.log('burger_'+index);
+  let index = 0;
+  let cardBody = "";
+  
+  burgers.forEach(item => {
+    cardBody += `
+      <div class="card m-3 p-3 rounded-5 bg-danger" style="width: 18rem;">
+        <img style="height:200px" src="${item.image}" class="card-img-top rounded-5" alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-light">${item.itemName}</h5>
+        </div>
+        <ul class="list-group list-group-flush bg-light">
+          <li class="list-group-item bg-danger text-light">Item Code &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;:&nbsp; &nbsp;&nbsp; &nbsp;${item.itemCode}</li>
+          <li class="list-group-item bg-danger text-light">Unit price &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; :&nbsp;&nbsp; &nbsp;  &nbsp;${item.price}</li>
+          <li class="list-group-item bg-danger id=burgerStock${index} text-light">Quantity &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; : &nbsp; &nbsp; &nbsp;${item.stock}</li>
+        </ul>
+        <div class="card-body">
+          <div class="form-outline w-50">
+            <input type="number" id="burgerQty_${index}" min=0 max=${item.stock} class="form-control text-light mb-3 w-75" placeholder="Qty" style="background-color:red;" />
+          </div>
+          <button type="button" class="btn btn-success" id="burger_${index}">Add to cart</button>
+        </div>
+      </div>
+    `;
+    index++;
+  });
+
+  document.getElementById("orderCard").innerHTML = cardBody;
+  burgers.forEach((item, i) => {
+    document.getElementById(`burger_${i}`).addEventListener("click", (e) => {
+      let quantity = document.getElementById(`burgerQty_${i}`).value;
+
+      if (quantity < item.stock && quantity != 0) {
+        console.log(`Item: ${item.itemName}, Quantity: ${quantity}`);
+
+         newStock = item.stock - quantity ;
+
+         let burgerIndex = burgers.findIndex(burger=>{
+            return burger.itemCode == item.itemCode
+         });
+
+         console.log("burgerIndex",burgerIndex);
+
+         burgers[burgerIndex].stock = newStock;
+      
+        let burgerOrder = {
+          itemCode: item.itemCode,
+          itemName: item.itemName,
+          price: item.price,
+          quantity: quantity
+        };
         
-        index++;
-    })
-    document.getElementById("customerCard").innerHTML = cardBody;
+        console.log("burgerOrder",burgerOrder);
+        console.log("burgerList",burgers);
+        console.log('NewStock',newStock);
+        
+        
+        orderDetailList.push(burgerOrder);
+        
+        console.log("orderDetailList",orderDetailList);
+        
+      }else {
+      alert('invalid quantity value !')
+      }
+    });
+
+  });
 
 });
+
+// ====================================================VIEW SUBMARINES==========================================================
+
 document.getElementById("btnViewSubmarine").addEventListener("click", () => {
-    let cardBody = "";
-    submarines.forEach(item => {
-        cardBody += `
-                     <div class="card m-3 p-3 rounded-5 bg-danger" style="width: 18rem;">
-                            <img  src="${item.image}" class="card-img-top rounded-5" style="height:200px" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title text-light">${item.itemName}</h5>
-                            </div>
-                            <ul class="list-group list-group-flush bg-light">
-                              <li class="list-group-item bg-danger text-light">Item Code &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;:&nbsp; &nbsp;&nbsp; &nbsp;${item.itemCode}</li>
-                              <li class="list-group-item bg-danger text-light">unit price &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; :&nbsp;&nbsp; &nbsp;  &nbsp;${item.price}</li>
-                              <li class="list-group-item bg-danger text-light">Quentity &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; : &nbsp; &nbsp; &nbsp;${item.stock}</li>
-                            </ul>
-                            <div class="card-body">
-                              <button class="btn btn-success">Add to cart</button>
-                            </div>
-                    </div>
-        `
-    })
+  let index = 0;
+  let cardBody = "";
 
-    document.getElementById("customerCard").innerHTML = cardBody;
+  submarines.forEach(item => {
+    cardBody += `
+      <div class="card m-3 p-3 rounded-5 bg-danger" style="width: 18rem;">
+        <img style="height:200px" src="${item.image}" class="card-img-top rounded-5" alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-light">${item.itemName}</h5>
+        </div>
+        <ul class="list-group list-group-flush bg-light">
+          <li class="list-group-item bg-danger text-light">Item Code &nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;${item.itemCode}</li>
+          <li class="list-group-item bg-danger text-light">Unit price &nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;${item.price}</li>
+          <li class="list-group-item bg-danger text-light">Quantity &nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;<span id="subStock${index}">${item.stock}</span></li>
+        </ul>
+        <div class="card-body">
+          <div class="form-outline w-50">
+            <input type="number" id="subQty_${index}" min="0" max="${item.stock}" class="form-control text-light mb-3 w-75" placeholder="Qty" style="background-color:red;" />
+          </div>
+          <button class="btn btn-success" id="sub_${index}">Add to cart</button>
+        </div>
+      </div>
+    `;
+    index++;
+  });
 
+  document.getElementById("orderCard").innerHTML = cardBody;
+
+  submarines.forEach((item, i) => {
+    document.getElementById(`sub_${i}`).addEventListener("click", () => {
+      let quantity = parseInt(document.getElementById(`subQty_${i}`).value, 10);
+
+      if (quantity > 0 && quantity <= item.stock) {
+        console.log(`Item: ${item.itemName}, Quantity: ${quantity}`);
+
+        let newStock = item.stock - quantity;
+        item.stock = newStock;
+
+        document.getElementById(`subStock${i}`).innerText = newStock;
+
+        let subOrder = {
+          itemCode: item.itemCode,
+          itemName: item.itemName,
+          price: item.price,
+          quantity: quantity
+        };
+
+        orderDetailList.push(subOrder);
+
+        console.log("Order details:", orderDetailList);
+      } else {
+        alert('Invalid quantity value!');
+      }
+    });
+  });
 });
+
+
+
+// ====================================================VIEW FRIES==========================================================
+
 document.getElementById("btnViewFries").addEventListener("click", () => {
-    let cardBody = "";
-    fries.forEach(item => {
-        cardBody += `
-                     <div class="card m-3 p-3 rounded-5 bg-danger" style="width: 18rem;">
-                            <img style="height:200px" src="${item.image}" class="card-img-top rounded-5" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title text-light">${item.itemName}</h5>
-                            </div>
-                            <ul class="list-group list-group-flush bg-light">
-                              <li class="list-group-item bg-danger text-light">Item Code &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;:&nbsp; &nbsp;&nbsp; &nbsp;${item.itemCode}</li>
-                              <li class="list-group-item bg-danger text-light">unit price &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; :&nbsp;&nbsp; &nbsp;  &nbsp;${item.price}</li>
-                              <li class="list-group-item bg-danger text-light">Quentity &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; : &nbsp; &nbsp; &nbsp;${item.stock}</li>
-                            </ul>
-                            <div class="card-body">
-                              <button class="btn btn-success">Add to cart</button>
-                            </div>
-                    </div>
-        `
-    })
+  let index = 0;
+  let cardBody = "";
+  fries.forEach(item => {
+    cardBody += `
+      <div class="card m-3 p-3 rounded-5 bg-danger" style="width: 18rem;">
+        <img style="height:200px" src="${item.image}" class="card-img-top rounded-5" alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-light">${item.itemName}</h5>
+        </div>
+        <ul class="list-group list-group-flush bg-light">
+          <li class="list-group-item bg-danger text-light">Item Code: ${item.itemCode}</li>
+          <li class="list-group-item bg-danger text-light">Unit Price: ${item.price}</li>
+          <li class="list-group-item bg-danger text-light">Quantity: ${item.stock}</li>
+        </ul>
+        <div class="card-body">
+          <input type="number" id="friesQty_${index}" min=0 max=${item.stock} class="form-control mb-3" placeholder="Qty" style="background-color:red;">
+          <button class="btn btn-success" id="fries_${index}">Add to cart</button>
+        </div>
+      </div>
+    `;
+    index++;
+  });
+  document.getElementById("orderCard").innerHTML = cardBody;
 
-    document.getElementById("customerCard").innerHTML = cardBody;
+  fries.forEach((item, i) => {
+    document.getElementById(`fries_${i}`).addEventListener("click", () => {
+      let quantity = document.getElementById(`friesQty_${i}`).value;
 
+      if (quantity < item.stock && quantity != 0) {
+        let newStock = item.stock - quantity;
+        fries[i].stock = newStock;
+
+        let friesOrder = {
+          itemCode: item.itemCode,
+          itemName: item.itemName,
+          price: item.price,
+          quantity: quantity
+        };
+
+        orderDetailList.push(friesOrder);
+        console.log("Order details:", orderDetailList);
+      } else {
+        alert('Invalid quantity value!');
+      }
+    });
+  });
 });
+
+
+// ====================================================VIEW PASTA==========================================================
+
+
 document.getElementById("btnViewPasta").addEventListener("click", () => {
-    let cardBody = "";
-    pasta.forEach(item => {
-        cardBody += `
-                     <div class="card m-3 p-3 rounded-5 bg-danger" style="width: 18rem;">
-                            <img style="height:200px" src="${item.image}" class="card-img-top rounded-5" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title text-light">${item.itemName}</h5>
-                            </div>
-                            <ul class="list-group list-group-flush bg-light">
-                              <li class="list-group-item bg-danger text-light">Item Code &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;:&nbsp; &nbsp;&nbsp; &nbsp;${item.itemCode}</li>
-                              <li class="list-group-item bg-danger text-light">unit price &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; :&nbsp;&nbsp; &nbsp;  &nbsp;${item.price}</li>
-                              <li class="list-group-item bg-danger text-light">Quentity &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; : &nbsp; &nbsp; &nbsp;${item.stock}</li>
-                            </ul>
-                            <div class="card-body">
-                              <button class="btn btn-success">Add to cart</button>
-                            </div>
-                    </div>
-        `
-    })
+  let index = 0;
+  let cardBody = "";
+  pasta.forEach(item => {
+    cardBody += `
+      <div class="card m-3 p-3 rounded-5 bg-danger" style="width: 18rem;">
+        <img style="height:200px" src="${item.image}" class="card-img-top rounded-5" alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-light">${item.itemName}</h5>
+        </div>
+        <ul class="list-group list-group-flush bg-light">
+          <li class="list-group-item bg-danger text-light">Item Code: ${item.itemCode}</li>
+          <li class="list-group-item bg-danger text-light">Unit Price: ${item.price}</li>
+          <li class="list-group-item bg-danger text-light">Quantity: ${item.stock}</li>
+        </ul>
+        <div class="card-body">
+          <input type="number" id="pastaQty_${index}" min=0 max=${item.stock} class="form-control mb-3" placeholder="Qty" style="background-color:red;">
+          <button class="btn btn-success" id="pasta_${index}">Add to cart</button>
+        </div>
+      </div>
+    `;
+    index++;
+  });
+  document.getElementById("orderCard").innerHTML = cardBody;
 
-    document.getElementById("customerCard").innerHTML = cardBody;
+  pasta.forEach((item, i) => {
+    document.getElementById(`pasta_${i}`).addEventListener("click", () => {
+      let quantity = document.getElementById(`pastaQty_${i}`).value;
 
+      if (quantity < item.stock && quantity != 0) {
+        let newStock = item.stock - quantity;
+        pasta[i].stock = newStock;
+
+        let pastaOrder = {
+          itemCode: item.itemCode,
+          itemName: item.itemName,
+          price: item.price,
+          quantity: quantity
+        };
+
+        orderDetailList.push(pastaOrder);
+        console.log("Order details:", orderDetailList);
+      } else {
+        alert('Invalid quantity value!');
+      }
+    });
+  });
 });
+
+
+// ====================================================VIEW CHICKEN==========================================================
+
 document.getElementById("btnViewChicken").addEventListener("click", () => {
-    let cardBody = "";
-    chicken.forEach(item => {
-        cardBody += `
-                     <div class="card m-3 p-3 rounded-5 bg-danger" style="width: 18rem;">
-                            <img style="height:200px" src="${item.image}" class="card-img-top rounded-5" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title text-light">${item.itemName}</h5>
-                            </div>
-                            <ul class="list-group list-group-flush bg-light">
-                              <li class="list-group-item bg-danger text-light">Item Code &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;:&nbsp; &nbsp;&nbsp; &nbsp;${item.itemCode}</li>
-                              <li class="list-group-item bg-danger text-light">unit price &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; :&nbsp;&nbsp; &nbsp;  &nbsp;${item.price}</li>
-                              <li class="list-group-item bg-danger text-light">Quentity &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; : &nbsp; &nbsp; &nbsp;${item.stock}</li>
-                            </ul>
-                            <div class="card-body">
-                              <button class="btn btn-success">Add to cart</button>
-                            </div>
-                    </div>
-        `
-    })
+  let index = 0;
+  let cardBody = "";
+  chicken.forEach(item => {
+    cardBody += `
+      <div class="card m-3 p-3 rounded-5 bg-danger" style="width: 18rem;">
+        <img style="height:200px" src="${item.image}" class="card-img-top rounded-5" alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-light">${item.itemName}</h5>
+        </div>
+        <ul class="list-group list-group-flush bg-light">
+          <li class="list-group-item bg-danger text-light">Item Code: ${item.itemCode}</li>
+          <li class="list-group-item bg-danger text-light">Unit Price: ${item.price}</li>
+          <li class="list-group-item bg-danger text-light">Quantity: ${item.stock}</li>
+        </ul>
+        <div class="card-body">
+          <input type="number" id="chickenQty_${index}" min=0 max=${item.stock} class="form-control mb-3" placeholder="Qty" style="background-color:red;">
+          <button class="btn btn-success" id="chicken_${index}">Add to cart</button>
+        </div>
+      </div>
+    `;
+    index++;
+  });
+  document.getElementById("orderCard").innerHTML = cardBody;
 
-    document.getElementById("customerCard").innerHTML = cardBody;
+  chicken.forEach((item, i) => {
+    document.getElementById(`chicken_${i}`).addEventListener("click", () => {
+      let quantity = document.getElementById(`chickenQty_${i}`).value;
 
+      if (quantity < item.stock && quantity != 0) {
+        let newStock = item.stock - quantity;
+        chicken[i].stock = newStock;
+
+        let chickenOrder = {
+          itemCode: item.itemCode,
+          itemName: item.itemName,
+          price: item.price,
+          quantity: quantity
+        };
+
+        orderDetailList.push(chickenOrder);
+        console.log("Order details:", orderDetailList);
+      } else {
+        alert('Invalid quantity value!');
+      }
+    });
+  });
 });
+
+// ====================================================VIEW DRINKS==========================================================
+
 document.getElementById("btnViewDrinks").addEventListener("click", () => {
-    let cardBody = "";
-    drinks.forEach(item => {
-        cardBody += `
-                     <div class="card m-3 p-3 rounded-5 bg-danger" style="width: 18rem;">
-                            <img style="height:250px" src="${item.image}" class="card-img-top rounded-5" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title text-light">${item.itemName}</h5>
-                            </div>
-                            <ul class="list-group list-group-flush bg-light">
-                              <li class="list-group-item bg-danger text-light">Item Code &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;:&nbsp; &nbsp;&nbsp; &nbsp;${item.itemCode}</li>
-                              <li class="list-group-item bg-danger text-light">unit price &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; :&nbsp;&nbsp; &nbsp;  &nbsp;${item.price}</li>
-                              <li class="list-group-item bg-danger text-light">Quentity &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; : &nbsp; &nbsp; &nbsp;${item.stock}</li>
-                            </ul>
-                            <div class="card-body">
-                              <button class="btn btn-success">Add to cart</button>
-                            </div>
-                    </div>
-        `
-    })
+  let index = 0;
+  let cardBody = "";
+  drinks.forEach(item => {
+    cardBody += `
+      <div class="card m-3 p-3 rounded-5 bg-danger" style="width: 18rem;">
+        <img style="height:200px" src="${item.image}" class="card-img-top rounded-5" alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-light">${item.itemName}</h5>
+        </div>
+        <ul class="list-group list-group-flush bg-light">
+          <li class="list-group-item bg-danger text-light">Item Code: ${item.itemCode}</li>
+          <li class="list-group-item bg-danger text-light">Unit Price: ${item.price}</li>
+          <li class="list-group-item bg-danger text-light">Quantity: ${item.stock}</li>
+        </ul>
+        <div class="card-body">
+          <input type="number" id="drinksQty_${index}" min=0 max=${item.stock} class="form-control mb-3" placeholder="Qty" style="background-color:red;">
+          <button class="btn btn-success" id="drinks_${index}">Add to cart</button>
+        </div>
+      </div>
+    `;
+    index++;
+  });
+  document.getElementById("orderCard").innerHTML = cardBody;
 
-    document.getElementById("customerCard").innerHTML = cardBody;
+  drinks.forEach((item, i) => {
+    document.getElementById(`drinks_${i}`).addEventListener("click", () => {
+      let quantity = document.getElementById(`drinksQty_${i}`).value;
 
+      if (quantity < item.stock && quantity != 0) {
+        let newStock = item.stock - quantity;
+        drinks[i].stock = newStock;
+
+        let drinksOrder = {
+          itemCode: item.itemCode,
+          itemName: item.itemName,
+          price: item.price,
+          quantity: quantity
+        };
+
+        orderDetailList.push(drinksOrder);
+        console.log("Order details:", orderDetailList);
+      } else {
+        alert('Invalid quantity value!');
+      }
+    });
+  });
+});
+
+// ===================================================ADD PROCEED TO CHECKOUT=========================================================
+
+document.getElementById("btnProceedCheckout").addEventListener("click", () => {
+  let totalPrice = orderDetailList.reduce((total, order) => total + order.price * order.quantity, 0);
+
+  let cardBody = `
+  <div class="card m-3 p-3 rounded-5 bg-danger" style="width: 100%;">
+    <div class="card-body">
+      <h5 class="card-title text-light">Order Summary</h5>
+    </div>
+    <div class="table-responsive">
+      <table class="table table-dark table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Item Name</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${orderDetailList.map(order => `
+            <tr>
+              <td>${order.itemName}</td>
+              <td>${order.quantity}</td>
+              <td>${order.price * order.quantity}</td>
+            </tr>
+          `).join("")}
+        </tbody>
+      </table>
+    </div>
+    <div class="card-body text-light">
+      <h6 class="card-title">Total Price: ${totalPrice}</h6>
+      <button class="btn btn-success" id="btnConfirmCheckout">Confirm Checkout</button>
+    </div>
+  </div>
+`;
+
+document.getElementById("orderSummary").innerHTML = cardBody;
+
+document.getElementById("btnConfirmCheckout").addEventListener("click", () => {
+  alert('Order confirmed! Total price: ' + totalPrice);
+  orderDetailList = []; // Clear the cart after confirmation
+  document.getElementById("orderSummary").innerHTML = ''; // Clear the summary card
+});
+
+
+  document.getElementById("orderSummary").innerHTML = cardBody;
+
+  document.getElementById("btnConfirmCheckout").addEventListener("click", () => {
+    alert('Order confirmed! Total price: ' + totalPrice);
+    orderDetailList = []; 
+    document.getElementById("orderSummary").innerHTML = ''; 
+  });
 });
 

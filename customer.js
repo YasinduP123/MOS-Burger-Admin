@@ -206,7 +206,6 @@ function btnDeleteCustomerOnAction() {
             return searchId == customer.id;
         });            
         
-
             customerList.splice(customerFound, 1);
             
             let customerFoundNow = customerList.findIndex((customer) => {
@@ -220,9 +219,6 @@ function btnDeleteCustomerOnAction() {
             }            
 
             console.log("customerList ",customerList);
-            
-
-            
 
     } else {
         alert("Customer Not Found!");
