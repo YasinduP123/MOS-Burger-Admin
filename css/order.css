@@ -371,19 +371,15 @@
       }
 
 
-      
-
-
 @media (max-width: 111360px) {
     
     .home-view-items{
         height: auto;
         width: auto;
-        margin-top: 50px;
         padding:auto;
     }
 
-    .container{
+    .container-1{
         background-color: rgba(0, 0, 0, 0.742);
         padding: 30px;
         border-radius: 20px;
@@ -403,7 +399,7 @@
         margin-top: 50px;
     }
 
-    .container{
+    .container-1{
         background-color: rgba(0, 0, 0, 0.742);
         padding: 30px;
         border-radius: 20px;
@@ -416,9 +412,9 @@
     }
 }
 
-@media (max-width: 460px) {
+/* @media (max-width: 460px) {
 
-    .container{
+    .container-1{
         background-color: rgba(0, 0, 0, 0.742);
         padding: 30px;
         border-radius: 20px;
@@ -436,5 +432,5 @@
         width: auto;
         padding: 10px;
     }
-}
+} */
 
