@@ -393,7 +393,7 @@
     .home-view {
         height: auto;
         width:  auto;
-        padding: 10px;
+        margin: auto;
     }
     
     .add-customer-form-edit-btn{
